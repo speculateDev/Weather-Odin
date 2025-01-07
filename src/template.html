@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/odin-icon.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Odin || Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header mb-md">
+        <div class="header__position">
+          <svg class="header__icon">
+            <use href="./img/icons.svg#icon-position"></use>
+          </svg>
+          <p class="header__position-text"></p>
+        </div>
+        <form class="header__search">
+          <button class="btn">
+            <svg class="header__icon-search">
+              <use href="./img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input
+            class="header__input"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search City"
+          />
+        </form>
+        <div class="header__icon-box">
+          <svg class="header__icon">
+            <use href="./img/icons.svg#icon-gps"></use>
+          </svg>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="forecast">
+          <!-- <div class="card-main">
+            <div class="card__date mb-tn">
+              <span>Friday</span>
+              <span>11:45 AM</span>
+            </div>
+            <div class="fx gp-1">
+              <div class="card-main__details">
+                <p class="card-main__temperature mb-tn">16&deg;</p>
+                <p>Real Feel <strong class="cl-d">18&deg;</strong></p>
+                <p>Wind N-E <strong class="cl-d">6-7km/h</strong></p>
+                <p>Pressure<strong class="cl-d">100MB</strong></p>
+                <p>Humidity<strong class="cl-d">51&deg;</strong></p>
+              </div>
+              <div class="card-main__details">
+                <div class="align-right">
+                  <svg class="mb-sm">
+                    <use href="./img/icons.svg#clear"></use>
+                  </svg>
+                </div>
+                <p>Sunrise <strong class="cl-d">5:30AM</strong></p>
+                <p>Sunset <strong class="cl-d">6:45</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-sub">
+            <p class="card-sub__date">SAT</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <p class="text-temperature mt-1">16&deg; - 18&deg;</p>
+          </div>
+          <div class="card-sub">
+            <p class="card-sub__date">SAT</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <p class="text-temperature">16&deg;</p>
+          </div>
+          <div class="card-sub">
+            <p class="card-sub__date">SAT</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <p class="text-temperature">16&deg;</p>
+          </div>
+          <div class="card-sub">
+            <p class="card-sub__date">SAT</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <p class="text-temperature">16&deg;</p>
+          </div>
+          <div class="card-sub">
+            <p class="card-sub__date">SAT</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <p class="text-temperature">16&deg;</p>
+          </div>
+          <div class="card-sub">
+            <p class="card-sub__date">SAT</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <p class="text-temperature">16&deg;</p>
+          </div> -->
+        </div>
+
+        <!-- <h3 class="header__tertiary">Today's Overview</h3> -->
+
+        <div class="overview fx gp-1 sa">
+          <!-- <div class="overview__card">
+            <p>Wind status</p>
+            <svg class="overview__img">
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <div>
+              <p><strong>7.50</strong>km/h</p>
+              <p>6:20AM</p>
+            </div>
+          </div>
+          <div class="overview__card">
+            <p>Visibility</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <div>
+              <p><strong>04</strong>km</p>
+            </div>
+          </div>
+          <div class="overview__card">
+            <p>Feels like</p>
+            <svg>
+              <use href="./img/icons.svg#clear"></use>
+            </svg>
+            <div>
+              <p><strong>04</strong>&deg;</p>
+            </div>
+          </div> -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

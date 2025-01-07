@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  background-color: #111015;
+  color: #fff;
+  font-family: 'Robot', sans-serif; }
+
+.container {
+  max-width: 110rem;
+  margin: 4rem auto; }
+
+svg {
+  height: 4rem;
+  width: 4rem; }
+
+.header {
+  display: flex;
+  gap: 4rem; }
+  .header__position {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem; }
+  .header__search {
+    background-color: #1b1b1d;
+    padding: 0.8rem 0 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    flex: 0 0 50%;
+    border: 1px solid #222;
+    margin-right: auto; }
+  .header__input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-family: inherit;
+    color: inherit;
+    flex: 1; }
+  .header__icon-box {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10rem;
+    background-color: #1b1b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #222;
+    transition: all 0.2s; }
+    .header__icon-box:hover {
+      filter: brightness(1.5); }
+  .header__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #fff; }
+  .header__icon-search {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #fff; }
+
+.forecast {
+  display: flex;
+  margin-bottom: 8rem;
+  justify-content: space-between; }
+
+.card-main {
+  color: #111015;
+  background-color: #bbd7ec;
+  border-radius: 12px;
+  overflow: hidden; }
+  .card-main > div {
+    padding: 1rem; }
+  .card-main__details {
+    color: #758694;
+    font-size: 0.95rem; }
+    .card-main__details p:not(:last-child) {
+      margin-bottom: 0.5rem; }
+
+.card-main__img {
+  height: 6rem;
+  width: 6rem; }
+
+.card-main__temperature {
+  font-family: 'Sour Gummy';
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #111015; }
+
+.card__date {
+  font-family: 'Sour Gummy';
+  background-color: #aec9dd;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 3rem; }
+
+.card-sub {
+  flex: 0 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #1b1b1d;
+  border-radius: 24px;
+  text-align: center;
+  aspect-ratio: 0.6; }
+  .card-sub svg {
+    fill: #eee; }
+  .card-sub > p {
+    padding: 1.2rem; }
+  .card-sub__date {
+    font-size: 1.4rem;
+    letter-spacing: 1.2px;
+    width: 100%;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 2rem; }
+
+.overview__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: #1b1b1d;
+  min-width: 21rem;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #9ca3af; }
+
+.overview__img {
+  height: 8rem;
+  width: 8rem; }
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  height: 1.5rem;
+  cursor: pointer; }
+
+.mb-tn {
+  margin-bottom: 1rem; }
+
+.mb-sm {
+  margin-bottom: 2rem !important; }
+
+.mb-md {
+  margin-bottom: 5rem !important; }
+
+.mb-bg {
+  margin-bottom: 9rem; }
+
+.fx {
+  display: flex; }
+
+.gp-1 {
+  gap: 4rem; }
+
+.sa {
+  justify-content: space-around; }
+
+.text-temperature {
+  font-family: 'Sour Gummy';
+  font-size: 1.7rem;
+  color: #d1d5db; }
+
+.align-right {
+  text-align: right; }
+
+.align-self {
+  align-self: flex-start;
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+.header__tertiary {
+  font-size: 2rem;
+  color: #9ca3af;
+  margin-bottom: 2rem; }
+
+.cl-d {
+  color: #111015; }
+
+.loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #eee;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: l3 0.8s infinite linear; }
+  .loader__container {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn); } }

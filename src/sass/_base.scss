@@ -1,0 +1,32 @@
+$color-primary: #bbd7ec;
+$color-grey-dark: #111015;
+$color-grey: #1b1b1d;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-grey-dark;
+  color: #fff;
+  font-family: 'Robot', sans-serif;
+}
+
+.container {
+  max-width: 110rem;
+  margin: 4rem auto;
+}
+
+svg {
+  height: 4rem;
+  width: 4rem;
+}
