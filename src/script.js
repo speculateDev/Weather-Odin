@@ -153,7 +153,7 @@ class Weather {
           <div class="card-main">
             <div class="card__date mb-tn">
               <span>${this.formatDate(time, 'long')}</span>
-              <span>${time.getHours()}:${time.getMinutes()} ${
+              <span>${time.getHours()}:${String(time.getMinutes()).padEnd(2, '0')} ${
       time.getHours() > 12 ? 'PM' : 'AM'
     }</span>
             </div>
